@@ -1,5 +1,5 @@
 bittensor==6.9.4
-diffusers==0.30.2
+diffusers==0.31.0
 optimum-quanto @ git+https://github.com/toilaluan/optimum-quanto.git
 controlnet_aux @ git+https://github.com/toilaluan/controlnet_aux.git
 litserve @ git+https://github.com/toilaluan/LitServe.git

@@ -306,7 +306,7 @@ def initialize_nicheimage_catalogue(config):
             "supporting_pipelines": MODEL_CONFIGS["Kolors"]["params"][
                 "supporting_pipelines"
             ],
-            "model_incentive_weight": 0.10,
+            "model_incentive_weight": 0.05,
             "reward_url": config.reward_url.Kolors,
             "reward_type": "image",
             "inference_params": {
@@ -317,6 +317,20 @@ def initialize_nicheimage_catalogue(config):
             },
             "timeout": 32,
             "synapse_type": ig_subnet.protocol.ImageGenerating,
+        },
+        "SD3Medium": {
+            "supporting_pipelines": MODEL_CONFIGS["SD3Medium"]["params"][
+                "supporting_pipelines"
+            ],
+            "model_incentive_weight": 0.05,
+            "reward_url": config.reward_url.SD3Medium,
+            "reward_type": "image",
+            "inference_params": {
+                "num_inference_steps": 28,
+                "width": 1024,
+                "height": 1024,
+                "guidance_scale": 4.5
+            }
         },
         "OpenGeneral": {
             "supporting_pipelines": ["open_txt2img"],
