@@ -211,7 +211,12 @@ def add_args(cls, parser):
             help="",
             default="https://nicheimage-api.nichetensor.com/reward/FluxSchnell",
         )
-
+        parser.add_argument(
+            "--reward_url.StableDiffusion3Large",
+            type=str,
+            help="",
+            default="https://nicheimage-api.nichetensor.com/reward/StableDiffusion3Large",
+        )
         parser.add_argument(
             "--reward_url.Kolors",
             type=str,

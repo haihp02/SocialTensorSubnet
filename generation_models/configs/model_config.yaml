@@ -100,3 +100,10 @@ Kolors:
       - "txt2img"
       - "controlnet"
       - "ip_adapter"
+
+SD3Medium:
+  target: generation_models.StableDiffusion3Medium
+  params:
+    supporting_pipelines:
+      - "txt2img"
+      - "controlnet"
