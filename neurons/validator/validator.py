@@ -330,7 +330,9 @@ def initialize_nicheimage_catalogue(config):
                 "width": 1024,
                 "height": 1024,
                 "guidance_scale": 4.5
-            }
+            },
+            "timeout": 32,
+            "synapse_type": ig_subnet.protocol.ImageGenerating,
         },
         "OpenGeneral": {
             "supporting_pipelines": ["open_txt2img"],
