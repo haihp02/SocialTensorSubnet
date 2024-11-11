@@ -223,7 +223,12 @@ def add_args(cls, parser):
             help="",
             default="https://nicheimage-api.nichetensor.com/reward/Kolors",
         )
-
+        parser.add_argument(
+            "--reward_url.SD3Medium",
+            type=str,
+            help="",
+            default="https://nicheimage-api.nichetensor.com/reward/SD3Medium",
+        )
         parser.add_argument(
             "--reward_url.OpenCategory",
             type=str,
